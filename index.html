@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Aprendiendo con P5</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">        <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js" type="text/javascript" > </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" >
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" > </script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" > </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js" ></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">        <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js" type="text/javascript" > </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" >
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" > </script>
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <center>
+            <div id="myModal" class="modal fade">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="model-title">Dibujos</h4>
+                    </div>
+
+                    <div class="modal-body">
+                        <img src="https://i.ibb.co/NnT6Q6L/solitario.jpg" width="500px" height="500px"> <br><br><br><br>
+                        <img src="https://i.ibb.co/Hr3Dw9p/pareja.jpg" width="500px" height="500px">
+                    </div>
+                </div>
+            </div>
+
+            <div class="header btn" id="header" onclick="cambiarFondo()">
+
+                <b><span>Hola, hey tu dibuja ¡¡Conmigo!! <button class="DqR btn btn-success" data-toggle="modal" data-target="#myModal">Dibujos que reconozco</button></span> <br>
+                
+                <span>Pon el mayor esfuerzo en dibujar porque sera dificir reconocer tu dibujo! Y recuerda esto en un computador no una hoja.</span></b> <br>
+            </div>
+            
+            <section class="home">
+                <h4 id="dibujo"><b>Creo que tu dibujo es: </h4>
+                <h4 id="precision">Mi instinto dice que estoy ---- seguro</b></h4>
+            </section>
+
+
+            <button class="btn btn-primary" onclick="removeC()">Limpiar Canvas</button>
+        </center>
+        <script src="main.js"></script>
+    </body>
+    <footer class="FootManualGR">
+
+        <span class="FootManualGR btn btn_secondary">Creado por AlemichuProgramming</span>
+    
+    </footer>
+    </body>
+</html>
